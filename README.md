@@ -44,7 +44,8 @@ POST https://{api-id}.execute-api.{region}.amazonaws.com/dev/create-account
 Content-Type: application/json
 {
     "username": "exampleUser",
-    "password": "examplePass"
+    "password": "examplePass",
+    "action": "/create-account"
 }
 
 
@@ -52,5 +53,6 @@ POST https://{api-id}.execute-api.{region}.amazonaws.com/dev/login
 Content-Type: application/json
 {
     "username": "exampleUser",
-    "password": "examplePass"
+    "password": "examplePass",
+     "action": "/login"
 }
